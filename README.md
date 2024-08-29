@@ -1,6 +1,6 @@
 # Multi-Label Genre Classification of Book Reviews
 
-Fine-Tuning BERT (language model) for Multi-Label Classification of Genre. The dataset is highly imbalanced. Consider oversampling, undersampling or data augemtation. The dataset
+Fine-Tuning BERT (language model) for Multi-Label Classification of Genre. The dataset is highly imbalanced. Consider oversampling, undersampling or data augmentation. The dataset
 is collected from the open API of Biblioteksentralen (https://www.bibsent.no/). The base model is from Nasjonalbiblioteket (https://www.nb.no/).
 
 ## Python (macOS)
