@@ -37,4 +37,4 @@ Run the ```fine_tune_model``` notebook.
 
 ## Classification
 
-Input the model and checkpoint from Fine-Tuning and runt the ```genre_classification``` notebook.
+Input the model and checkpoint from Fine-Tuning and run the ```genre_classification``` notebook.
