@@ -12,12 +12,6 @@ vocabulary is from Nasjonalbiblioteket (https://www.nb.no/).
 * Norwegian thesaurus on genre and form (https://www.nb.no/nbvok/ntsf/en/)
 * NB-BERT-large (https://huggingface.co/NbAiLab/nb-bert-large/)
 
-## Python
-
-```shell
-brew install python
-```
-
 ## Virtual environment
 
 ### Create virtual environment
@@ -32,7 +26,7 @@ python3 -m venv env
 source env/bin/activate
 ```
 
-## Requirements
+### Install requirements
 
 ```shell
 pip3 install -r requirements.txt
