@@ -5,7 +5,7 @@ __pycache__/
 
 env/
 
-csv/
+datasets/
 models/
 
 .DS_store

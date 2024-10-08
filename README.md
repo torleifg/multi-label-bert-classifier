@@ -43,15 +43,19 @@ After activating the virtual environment, install the necessary dependencies:
 pip3 install -r requirements.txt
 ```
 
-### 3. Dataset
+### 3. Create Dataset
 
 The dataset contains metadata including reviews and associated genre and form labels. Since the dataset is highly
 imbalanced, techniques such as oversampling, undersampling, or data augmentation may be applied to improve the
 performance of the model.
 
+Run the ```create_dataset.ipynb``` notebook to create the dataset.
+
+### 4. Describe Dataset
+
 Run the ```describe_dataset.ipynb``` notebook to explore and visualize the dataset distribution.
 
-### 4. Fine-Tuning
+### 5. Fine-Tuning
 
 Fine-tune the NB-BERT-large model by running the ```fine_tune_model.ipynb``` notebook. This notebook will:
 
@@ -60,7 +64,7 @@ Fine-tune the NB-BERT-large model by running the ```fine_tune_model.ipynb``` not
 * handle data imbalance using appropriate techniques.
 * fine-tune the NB-BERT-large model on the prepared dataset.
 
-### 5. Classification
+### 6. Classification
 
 Once the model has been fine-tuned, you can use the ```genre_classification.ipynb``` notebook to classify new book
 reviews into genre and form. This notebook allows you to:
@@ -69,7 +73,7 @@ reviews into genre and form. This notebook allows you to:
 - input book reviews for genre classification.
 - output the predicted genre and form labels for the reviews.
 
-## Evaluation and F1 Macro Score
+## 7. Evaluation and F1 Macro Score
 
 The model performance is evaluated using several metrics, including F1 Macro Score, which is particularly suited for
 imbalanced datasets like this one.
