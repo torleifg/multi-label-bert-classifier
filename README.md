@@ -78,7 +78,7 @@ pip install -r requirements.txt
 
 https://github.com/jupyterlab/jupyterlab-desktop
 
-Activate the newly created virtual environment (upper right corner). 
+Open the project in JupyterLAb and activate the newly created virtual environment (upper right corner). 
 
 ### 4. Create Dataset
 
