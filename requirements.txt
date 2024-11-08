@@ -1,6 +1,6 @@
 pandas
 jupyter
-transformers
+transformers==4.45.2
 torch
 scikit-learn
 datasets
