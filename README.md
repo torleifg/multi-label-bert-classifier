@@ -2,7 +2,7 @@
 
 This repository contains code and resources for fine-tuning a BERT-based model for multi-label genre and form
 classification of book reviews. It uses BERT-based language models from Nasjonalbiblioteket (Norwegian National
-Library) and a dataset drawn from the open API of Biblioteksentralen. The dataset is highly imbalanced.
+Library), DistilBERT and a dataset drawn from the open API of Biblioteksentralen. The dataset is highly imbalanced.
 
 ## Overview
 
@@ -20,6 +20,8 @@ Library) and a dataset drawn from the open API of Biblioteksentralen. The datase
   fine-tuning (https://huggingface.co/NbAiLab/nb-bert-base).
 - **NB-BERT-large**: Pre-trained Norwegian language model used for
   fine-tuning (https://huggingface.co/NbAiLab/nb-bert-large).
+- **DistilBERT base multilingual (cased)**: Pre-trained language model used for
+  fine-tuning (https://huggingface.co/distilbert/distilbert-base-multilingual-cased).
 
 ## Getting Started
 
@@ -118,3 +120,5 @@ imbalanced datasets like this one.
 After training the NB-Bert-base model for one epoch, the F1 Macro Score was: **0.83**.
 
 After training the NB-Bert-large model for one epoch, the F1 Macro Score was: **0.89**.
+
+After training the DistilBERT base multilingual (cased) for one epoch, the F1 Macro Score was: **0.84**.
