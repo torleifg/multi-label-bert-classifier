@@ -48,7 +48,7 @@ pyenv install 3.12.7
 Switch to Python version:
 
 ```bash
-pyenv global 3.12.7     
+pyenv local 3.12.7     
 ```
 
 Verify Python version
@@ -80,7 +80,8 @@ pip install -r requirements.txt
 
 https://github.com/jupyterlab/jupyterlab-desktop
 
-Open the project in JupyterLAb and activate the newly created virtual environment (upper right corner). 
+Open the project in JupyterLab and activate the newly created virtual environment (multi-label-bert-classifier/env/bin/python) 
+from upper right corner in JupyterLab.
 
 ### 4. Create Dataset
 
