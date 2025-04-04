@@ -117,9 +117,3 @@ reviews into genre and form. This notebook allows you to:
 
 The model performance is evaluated using several metrics, including F1 Macro Score, which is particularly suited for
 imbalanced datasets like this one.
-
-After training the NB-Bert-base model for one epoch, the F1 Macro Score was: **0.83**.
-
-After training the NB-Bert-large model for one epoch, the F1 Macro Score was: **0.89**.
-
-After training the DistilBERT base multilingual (cased) for one epoch, the F1 Macro Score was: **0.84**.

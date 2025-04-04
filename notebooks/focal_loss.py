@@ -19,10 +19,13 @@ class FocalLoss(nn.Module):
 
 
 class FocalLossTrainer(Trainer):
-    def compute_loss(self, model, inputs, return_outputs=False):
+    def __init__(self, *args, focal_alpha=0.25, focal_gamma=2.0, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.focal_loss_fn = FocalLoss(alpha=focal_alpha, gamma=focal_gamma)
+
+    def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
         labels = inputs.get("labels")
         outputs = model(**inputs)
-        logits = outputs.get('logits')
-        loss = FocalLoss(alpha=0.25, gamma=2.0)(logits, labels.float())
-
+        logits = outputs.get("logits")
+        loss = self.focal_loss_fn(logits, labels.float())
         return (loss, outputs) if return_outputs else loss
