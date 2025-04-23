@@ -28,4 +28,5 @@ class FocalLossTrainer(Trainer):
         outputs = model(**inputs)
         logits = outputs.get("logits")
         loss = self.focal_loss_fn(logits, labels.float())
+
         return (loss, outputs) if return_outputs else loss
